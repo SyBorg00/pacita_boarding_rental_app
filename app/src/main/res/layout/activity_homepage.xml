@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="430dp"
+                android:layout_height="83dp"
+                android:background="#282626"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="Pacita Boarding and Rental"
+                    android:textColor="#FFFDFD"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/mainLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <Button
+                    android:id="@+id/mainLogoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#7C7C7C"
+                    android:text="Logout"
+                    app:cornerRadius="1dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                app:srcCompat="@drawable/main_logo" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_book"
+                android:text="Welcome"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout9">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <ImageButton
+                android:id="@+id/inboxButton"
+                android:layout_width="166dp"
+                android:layout_height="149dp"
+                android:background="@drawable/border_white_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/inquiry_icon"
+                tools:src="@drawable/inquiry_icon" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_book"
+                android:text="Submit Inquiry"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <ImageButton
+                android:id="@+id/listingButton"
+                android:layout_width="167dp"
+                android:layout_height="142dp"
+                android:background="@drawable/border_white_bg"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rent_icon"
+                tools:src="@drawable/rent_icon" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_book"
+                android:text="Available Rentals"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <ImageButton
+                android:id="@+id/profileButton"
+                android:layout_width="164dp"
+                android:layout_height="147dp"
+                android:background="@drawable/border_white_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_icon"
+                tools:src="@drawable/profile_icon" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_book"
+                android:text="Your Profile"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <ImageButton
+                android:id="@+id/payHistoryButton"
+                android:layout_width="164dp"
+                android:layout_height="144dp"
+                android:background="@drawable/border_white_bg"
+                android:scaleType="fitCenter"
+                android:src="@drawable/activity_icon"
+                tools:src="@drawable/activity_icon" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_book"
+                android:scaleType="centerCrop"
+                android:text="Payment History"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

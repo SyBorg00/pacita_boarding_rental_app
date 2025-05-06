@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Androidfinalstest"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".AdminEditTenantRentalActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminUserListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminViewStatisticsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ApartmentViewingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="GCashReceiptActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminProcessDownpayment"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminHomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApartmentCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApartmentUpdateActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PaymentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GcashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BdoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileDetailedViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminProcessTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InquiryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InboxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RentApartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="ViewFullInquiryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="ViewFullRequestActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewInquiryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewAccountStatementActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

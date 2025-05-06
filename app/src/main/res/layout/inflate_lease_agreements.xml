@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. General Provisions&#xA;1.1 These Terms and Conditions govern the use of the facilities and services provided by [Dormitory Name] (&quot;the Dormitory&quot;).&#xA;1.2 By signing the lease agreement or making any payment, the tenant acknowledges and agrees to comply with these Terms and Conditions.&#xA;1.3 Tenant Identification: All tenants are required to provide a valid government-issued ID or school/company ID upon registration and check-in. A copy of the ID will be kept on file for security and record-keeping purposes.&#xA;&#xA;2. Tenant Responsibilities&#xA;2.1 Payment of Rent: Rent must be paid on or before the agreed due date. Late payments may incur penalties.&#xA;2.2 Respect for Property: Tenants must maintain the cleanliness and good condition of their rooms and shared spaces. Damages caused by the tenant will be charged accordingly, including the costs of replacing or repairing damaged appliances.&#xA;2.3 Compliance with Rules: Tenants must adhere to all dormitory rules, including quiet hours, visitor policies, and other guidelines communicated by management.&#xA;2.4 Prohibited Activities: Illegal activities, smoking, gambling, and possession of prohibited substances or items (e.g., dangerous materials) are strictly forbidden.&#xA;2.5 Safety and Security: Tenants are responsible for securing their personal belongings and locking their rooms.&#xA;&#xA;3. Use of Facilities&#xA;3.1 Common Areas: Tenants must share common areas responsibly and ensure they are left clean and in good condition after use.&#xA;3.2 Utilities: Tenants must conserve water, electricity, and other utilities. Excessive usage may incur additional fees.&#xA;3.3 Prohibited Modifications: Tenants are not allowed to alter or install fixtures without prior written permission.&#xA;&#xA;4. Visitors&#xA;4.1 Visitors are allowed during designated hours only and must be registered at the reception or security desk.&#xA;4.2 Overnight stays by visitors are strictly prohibited unless explicitly permitted by management.&#xA;4.3 Tenants are responsible for the behavior and actions of their visitors.&#xA;&#xA;5. Appliance Damage Charges&#xA;In case of damage to dorm-provided appliances or fixtures, tenants will be charged as follows:&#xA;Air Conditioner: PHP 10,000–15,000 (depending on model and severity of damage)&#xA;Refrigerator: PHP 8,000–12,000&#xA;Electric Fan: PHP 1,500–3,000&#xA;Microwave Oven: PHP 4,000–6,000&#xA;Water Heater: PHP 5,000–7,000&#xA;Television: PHP 10,000–20,000&#xA;Study Desk or Chair: PHP 2,000–3,000&#xA;Bed Frame: PHP 5,000–8,000&#xA;Mattress: PHP 3,000–5,000&#xA;Lighting Fixtures: PHP 500–1,000 per unit&#xA;Note: Costs may vary depending on the extent of damage and market rates for replacement or repair. Tenants will be informed of the exact charges before payment is required.&#xA;&#xA;6. Termination of Agreement&#xA;6.1 Voluntary Termination: Tenants must provide at least [insert notice period] written notice before vacating the premises.&#xA;6.2 Breach of Agreement: Management reserves the right to terminate the lease in cases of non-payment, rule violations, or other breaches of these Terms and Conditions.&#xA;6.3 Deposit Refunds: Deposits will be refunded, less any deductions for damages or unpaid dues, within [insert timeframe] after the tenant vacates.&#xA;&#xA;7. Liability&#xA;7.1 The Dormitory is not responsible for loss, theft, or damage to the tenant&apos;s personal property.&#xA;7.2 Tenants must report any maintenance issues or hazards immediately to management.&#xA;&#xA;" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

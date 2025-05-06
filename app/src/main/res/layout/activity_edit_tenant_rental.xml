@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="430dp"
+            android:layout_height="83dp"
+            android:background="#282626"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingRight="15dp"
+                android:text="Pacita Boarding and Rental"
+                android:textColor="#FFFDFD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/mainLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/mainLogoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:backgroundTint="#7C7C7C"
+                android:text="Logout"
+                app:cornerRadius="1dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="554dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="259dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/apartmentImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/room" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:background="#7BBD57"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/rentalText"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:text="Address"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView74"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ardent_sans_bold"
+                            android:text="Due Date:"
+                            android:textColor="#E4E4E4"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/dueDateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="41dp"
+                            android:layout_weight="1"
+                            android:text="01/01/1001"
+                            android:textAlignment="textEnd"
+                            android:textColor="#E3E3E3"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView85"
+                            android:layout_width="57dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ardent_sans_bold"
+                            android:text="Outstanding Balance:"
+                            android:textColor="#EFEFEF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/outstandingBalanceText"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0.00"
+                            android:textAlignment="textEnd"
+                            android:textColor="#E6E6E6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#3F7852"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView83"
+                            android:layout_width="179dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ardent_sans_extra_bold"
+                            android:text="Billing Information:"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/billInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#3F7852"
+                            android:fontFamily="@font/ardent_sans_bold"
+                            android:paddingLeft="10dp"
+                            android:text="01/01/1001"
+                            android:textAlignment="textEnd"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/billList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_square_transparent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView100"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#CFF3C8"
+                                android:fontFamily="@font/ardent_sans_bold"
+                                android:text="INTIALIZATION"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView79"
+                                    android:layout_width="248dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_book"
+                                    android:text="Monthly Payment:" />
+
+                                <TextView
+                                    android:id="@+id/monthlyPayText"
+                                    android:layout_width="196dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_regular"
+                                    android:text="0.00"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView80"
+                                    android:layout_width="427dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_book"
+                                    android:text="Old Balance:" />
+
+                                <TextView
+                                    android:id="@+id/oldBalanceText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_regular"
+                                    android:text="0.00"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/othersList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView96"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#CEF2C7"
+                                    android:fontFamily="@font/ardent_sans_bold"
+                                    android:text="OTHERS"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/penaltiesList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView97"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#CEF2C7"
+                                    android:fontFamily="@font/ardent_sans_bold"
+                                    android:text="PENALTIES" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView81"
+                                    android:layout_width="427dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_book"
+                                    android:text="Amount Paid:" />
+
+                                <TextView
+                                    android:id="@+id/amountPaidText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_bold"
+                                    android:text="0.00"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView82"
+                                    android:layout_width="429dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ardent_sans_bold"
+                                    android:text="Total Payment:"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/totalPaymentText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/previousButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#3F7852"
+                                android:text="Previous"
+                                app:cornerRadius="5dp" />
+
+                            <Button
+                                android:id="@+id/nextButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#3F7852"
+                                android:text="Next"
+                                app:cornerRadius="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <LinearLayout
+                        android:id="@+id/equipmentLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/ardent_sans_book"
+                            android:text="Tenant's Equipments:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+
+                                android:id="@+id/equipmentList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal" />
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/manageBillButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#4CAE50"
+                            android:text="Manage Tenant's Billing"
+                            app:cornerRadius="5dp" />
+
+                        <Button
+                            android:id="@+id/viewTransactionButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#4CAF50"
+                            android:text="View Transactions"
+                            app:cornerRadius="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#7C7C7C"
+        android:text="Back"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

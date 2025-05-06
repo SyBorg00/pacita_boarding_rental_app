@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="430dp"
+            android:layout_height="83dp"
+            android:background="#282626"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingRight="15dp"
+                android:text="Pacita Boarding and Rental"
+                android:textColor="#FFFDFD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/mainLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/mainLogoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:backgroundTint="#7C7C7C"
+                android:text="Logout"
+                app:cornerRadius="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="88dp"
+                android:layout_height="62dp"
+                app:srcCompat="@drawable/main_logo" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ardent_sans_regular"
+                android:gravity="center|start"
+                android:text="available apartments "
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <LinearLayout
+            android:id="@+id/apartmentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout20"
+        android:layout_width="415dp"
+        android:layout_height="209dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/rentalManagementLayout"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/viewRentalsImage"
+                    android:layout_width="209dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/rent" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="View Rentals"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/viewRentalRequestImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    app:srcCompat="@drawable/activity" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Requests"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#6EA44C"
+            android:text="Add Apartment"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Back"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

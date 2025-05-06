@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GcashActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007CFD"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="430dp"
+                android:layout_height="83dp"
+                android:background="#C1C1C1"
+                android:backgroundTint="#007CFD"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="Pacita Boarding and Rental"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mainLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <Button
+                    android:id="@+id/mainLogoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#002CB8"
+                    android:text="Logout"
+                    app:cornerRadius="0dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:background="#007CFE"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/gcash_logo_transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:fontFamily="@font/ardent_sans_bold"
+                android:text="Payment QR Code"
+                android:textAlignment="center"
+                android:textColor="#012CB8"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="199dp"
+                android:layout_height="29dp"
+                app:srcCompat="@drawable/gcash_logo" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/r" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_book"
+                android:text="PACITA BOARDING"
+                android:textAlignment="center"
+                android:textColor="#007CFD"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/ardent_sans_book"
+                android:text="09465869824"
+                android:textAlignment="center"
+                android:textColor="#012CB8"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="And Submit Receipt Here"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/receiptButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#007CFD"
+                android:text="Submit Receipt"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/redirectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#002CB7"
+                android:text="Redirect To GCash App"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#002CB6"
+                android:text="Back"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

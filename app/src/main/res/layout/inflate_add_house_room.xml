@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="724dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/xImage"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/x" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/addRoomImage"
+                android:layout_width="210dp"
+                android:layout_height="141dp"
+                android:layout_gravity="center"
+                android:contentDescription="Add Room Image"
+                app:srcCompat="@drawable/house_icon" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/ardent_sans_book"
+            android:text="Click to set Room Image"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/typeLabel"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ardent_sans_bold"
+                android:text="Room Type:"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/roomTypeField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <EditText
+            android:id="@+id/descriptionField"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="@drawable/border_white_bg"
+            android:ems="10"
+            android:hint="Add Description"
+            android:inputType="text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ardent_sans_bold"
+                android:text="Amenities:"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/manageAmenitiesButton"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#5DA660"
+                android:text="Set Amenities"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:background="@drawable/border_white_bg">
+
+            <LinearLayout
+                android:id="@+id/amenitiesList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <Button
+            android:id="@+id/addRoomButton"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5DA660"
+            android:text="Add Room"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

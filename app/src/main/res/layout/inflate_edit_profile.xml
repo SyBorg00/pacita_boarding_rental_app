@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:background="#C4EDFD"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="110dp">
+
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="213dp"
+                    android:layout_height="225dp"
+                    android:layout_gravity="center"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/profile"
+                    tools:srcCompat="@drawable/profile" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Your Profile"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ardent_sans_bold"
+            android:text="Set Your Profile Information:"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fnameField"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="First Name:"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/lnameField"
+                android:layout_width="213dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/contactNumField"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Your Contact Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/birthDateField"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint=" Birthdate (MM/DD/YYYY)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/occupationField"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Occupation (Student, Worker, Etc...)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
